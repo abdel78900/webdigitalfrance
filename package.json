@@ -9,9 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mdx-js/react": "^2.3.0",
     "@next/font": "13.1.6",
+    "analytics": "^0.8.1",
+    "framer-motion": "^9.0.2",
     "next": "13.1.6",
+    "rc-drawer": "^6.1.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-custom-scrollbars-2": "^4.5.0",
+    "react-dom": "18.2.0",
+    "react-ga": "^3.3.1",
+    "react-icons": "^4.7.1",
+    "react-masonry-css": "^1.0.16",
+    "react-scroll": "^1.8.9",
+    "react-stickynode": "^4.1.0",
+    "react-typed": "^1.2.0",
+    "react-waypoint": "^10.3.0",
+    "react-whatsapp-widget": "^2.1.0",
+    "swiper": "^9.0.4",
+    "theme-ui": "^0.15.5",
+    "typeface-dm-sans": "^1.1.13"
   }
 }

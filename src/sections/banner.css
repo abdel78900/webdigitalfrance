@@ -1,0 +1,154 @@
+.container{
+position: relative;
+width: 1000px;
+height: 1000px;
+
+}
+
+.bannerIcon1{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: bannerAnim2 8s linear infinite;
+    
+}
+.bannerIcon2{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    animation: bannerAnim2 8s linear infinite;
+}
+.bannerIcon3{
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    animation: bannerAnim1 8s linear infinite;
+}
+.bannerIcon4{
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    animation: bannerAnim1 8s linear infinite;
+}
+.bannerIcon5{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    
+}
+.bannerIcon6{
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    animation: bannerAnim3 8s linear infinite;
+}
+.bannerIcon7{
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    
+}
+.bannerImage {
+    display: block;
+    margin:  0 auto;
+    position: relative;
+    
+  }
+  .tabImage{
+
+      position: relative;
+      animation: ease-in 8s linear
+    }
+    .my-masonry-grid {
+        display: -webkit-box; /* Not needed if autoprefixing */
+        display: -ms-flexbox; /* Not needed if autoprefixing */
+        display: flex;
+        margin-left: -30px; /* gutter size offset */
+        width: auto;
+      }
+      .my-masonry-grid_column {
+        padding-left: 30px; /* gutter size */
+        background-clip: padding-box;
+      }
+      
+      /* Style your items */
+      .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+        background: grey;
+        margin-bottom: 30px;
+      }
+
+      .spanFaq{
+        position: absolute;
+        display: none;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #fff;
+        }
+@keyframes bannerAnim2 {
+    0% {
+        transform: translateY(0px) translateX(0) rotate(0);
+    }
+
+    30% {
+        transform: translateY(30px) translateX(30px) rotate(15deg);
+        transform-origin: center center;
+    }
+
+    50% {
+        transform: translateY(50px) translateX(50px) rotate(45deg);
+        transform-origin: right bottom;
+    }
+
+    80% {
+        transform: translateY(30px) translateX(30px) rotate(15deg);
+        transform-origin: left top;
+    }
+
+    100% {
+        transform: translateY(0px) translateX(0) rotate(0);
+        transform-origin: center center;
+    }
+}
+    
+@keyframes bannerAnim1{
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+
+    30% {
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    60% {
+        transform: rotate3d(1, 0, 0, 0deg);
+    }
+
+    80% {
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+
+}
+    
+
+
+@keyframes bannerAnim3 {
+     0%,
+    100% {
+        transform: perspective(400px) translateY(0) rotate(0deg) translateZ(0px) translateX(0);
+    }
+
+    50% {
+        transform: perspective(400px) rotate(-45deg) translateZ(20px) translateY(20px) translateX(20px);
+    }
+}
+   
+
