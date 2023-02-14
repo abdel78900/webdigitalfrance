@@ -12,7 +12,7 @@ export default function Logo({ image }) {
         alignItems: 'center',
       }}
     >
-      <Image src={image} alt="webdigital logo" />
+      <Image className='logoName' src={image} alt="webdigital logo" />
     </Link>
   );
 }

@@ -5,14 +5,14 @@ import Logo from '../logo';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobileDrawer';
 import menuItems from './header.data';
-import logoDark from '../../assets/logo-dark.svg';
+import logoDark from '../../assets/logowdfname.png';
 
 export default function Header({ className }) {
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className}>
         <Container sx={styles.container}>
-          <Logo image={logoDark} />
+          <Logo className='logoName' image={logoDark} />
 
           <Flex as="nav" sx={styles.nav }>
             {menuItems.map(({ path, label }, i) => (

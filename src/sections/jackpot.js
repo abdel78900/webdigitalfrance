@@ -10,14 +10,14 @@ const JACKPOT_DATA = [
   {
     image: jackpotImage1,
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managments your blood tests.',
-    heading: 'Smart Features',
+      "Une équipe d'experts en développement web, design et marketing digital pour aider les entreprises à atteindre leurs objectifs en ligne.",
+    heading: 'Une équipe compétente à vos côtés',
   },
   {
     image: jackpotImage2,
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managments your blood tests.',
-    heading: 'Secure Contents',
+      "Des solutions personnalisées adaptées à chaque entreprise pour une expérience en ligne qui dépasse les attentes.",
+    heading: 'Des solutions personnalisées pour votre entreprise',
   },
 ];
 
@@ -31,8 +31,8 @@ const Jackpot = () => {
           </Box>
           <Box sx={styles.content}>
             <Box sx={styles.heading}>
-              <Text as="span">Core features</Text>
-              <Heading as="h3">Smart Jackpots that you may love this</Heading>
+              <Text as="span">Notre expertise</Text>
+              <Heading as="h3">Pourquoi nous choisir ? </Heading>
             </Box>
             <Box sx={styles.jackpotCardBox}>
               {JACKPOT_DATA.map(({ image, heading, text }, index) => (

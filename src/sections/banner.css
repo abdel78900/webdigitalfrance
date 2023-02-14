@@ -89,6 +89,14 @@ height: 1000px;
         border-radius: 50%;
         color: #fff;
         }
+        .logoBanner{
+            width: 150px;
+            height: auto;
+        }
+        .logoName{
+            width: 300px;
+            height: auto;
+        }
 @keyframes bannerAnim2 {
     0% {
         transform: translateY(0px) translateX(0) rotate(0);

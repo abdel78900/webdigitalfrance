@@ -3,6 +3,10 @@ import { Box, Container, Flex, Text, Heading } from 'theme-ui';
 import { Link } from '../components/link';
 import BlockTitle from '../components/block-title';
 import Accordion from '../components/accordion/accordion';
+import questionIcon from '../assets/chat.svg';
+import Image from 'next/image'
+
+
 
 const accordionData = [
   {
@@ -48,10 +52,13 @@ const FAQ = () => {
   return (
     <Box as="section">
       <Container>
-        <BlockTitle
+          <Image className='' src={questionIcon}/>
+        <Flex sx={styles.flexTitle}>
+          <BlockTitle
           title="Questions fréquemment posées"
-          text=""
         />
+        </Flex>
+        
         <Flex sx={styles.flex}>
           <Box sx={styles.faqWrapper}>
             <Accordion items={accordionData} />
@@ -77,6 +84,13 @@ const FAQ = () => {
 export default FAQ;
 
 const styles = {
+  flexTitle:{
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'center',
+    
+
+  },
   flex: {
     flexWrap: 'wrap',
     flexDirection: ['column', null, null, null, null, 'row-reverse'],

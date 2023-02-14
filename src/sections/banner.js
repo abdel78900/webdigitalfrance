@@ -3,7 +3,7 @@ import { Box, Container, Heading, } from 'theme-ui';
 import Image from 'next/image'
 import Typed from 'react-typed'
 import { keyframes } from '@emotion/react';
-import logoImage from '../assets/banner-logo.png';
+import logoImage from '../assets/logowdfnew.png';
 import bannerImage from '../assets/banner-mockup.png';
 import bannerIcon1 from '../assets/banner-icon-1-1.svg';
 import bannerIcon2 from '../assets/banner-icon-1-2.svg';
@@ -66,7 +66,7 @@ const Banner = () => {
           src={bannerIcon7}
         />
 
-        <Image sx={styles.logo} src={logoImage} alt="logo image" />
+        <Image className='logoBanner' src={logoImage} alt="logo image" />
         <Heading as="h2">Donnez vie à vos projets en ligne grâce à notre savoir-faire</Heading>
         <Typed
           strings={[
